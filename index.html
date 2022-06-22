@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/js/green-audi-player/css/green-audio-player.css">
+    <link rel="stylesheet" href="libs/css/btn-search.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="libs/js/light-search.js"></script>
+    <script src="libs/js/green-audi-player/js/green-audio-player.js"></script>
+</head>
+
+<body>
+    <div id="music-container">
+        <img src="icons/musicmenu.svg" class="musical-icon">
+        <div class="hidden-menu z-i-2 transition-04s" id="menu-column">
+            <div class="menu p-relative">
+                <img src="icons/left-arrow-32.png" class="top-right-10 cursor-pointer" id="close-menu">
+
+                <div class="menu-search-section">
+                    <div class="search-box">
+                        <button class="btn-search"><i>
+                            <img src="icons/search-24.png">
+                        </i></button>
+                        <input type="text" class="input-search" placeholder="Search" autocomplete="off" id="search-music">
+                    </div>
+                </div>
+
+                <div class="menu-musics" id="musics-list"></div>
+            </div>
+        </div>
+        <div class="transition-04s" id="music-column">
+            <div class="music">
+                <img class="music-img blob-2" id="selected-music-img">
+                <h1 class="music-title" id="selected-music-name"></h1>
+                <h2 class="music-artist" id="selected-music-artist"></h2>
+                <div class="music-controlers">
+                    <audio id="audio"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
